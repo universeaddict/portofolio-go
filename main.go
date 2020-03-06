@@ -8,7 +8,12 @@ import (
 )
 
 func main() {
+	//port must be set (this is random port)
 	port := os.Getenv("PORT")
+	
+	// local port
+	// port := "1323"
+
 	e := routes.Web()
 	// e.Static("/", "template")
 	e.Static("/", "template")
