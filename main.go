@@ -13,7 +13,7 @@ func main() {
 	// e.Static("/", "template")
 	e.Static("/", "template")
 	// Start server
-	e.Logger.Fatal(e.Start(port))
+	e.Logger.Fatal(e.Start(":"+port))
 }
 
 // Handler
